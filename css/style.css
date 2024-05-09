@@ -1,0 +1,35 @@
+body {
+    padding: 1.5rem;
+}
+
+#lista-de-tarefas {
+    /* mobile first */
+    /* nested class */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 1.78rem auto;
+
+    .botoes {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.apagando {
+    animation: fadeout 2s;
+}
+
+@keyframes fadeout {
+    from { 
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
